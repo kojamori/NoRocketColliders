@@ -41,7 +41,7 @@ namespace NoRocketColliders
         private bool rocketCollisionsDisabled = false;
 
         private void onWorldSceneLoaded() {
-            ModKeybindings.AddOnKeyDown_World(new CustomKey() { key = KeyCode.Keypad8, shift = true }, () =>
+            ModKeybindings.AddOnKeyDown_World(new CustomKey() { key = KeyCode.KeypadMultiply }, () =>
             {
                 rocketCollisionsDisabled = !rocketCollisionsDisabled;
                 ApplyColliderSettings();
@@ -63,7 +63,7 @@ namespace NoRocketColliders
             ApplyColliderSettings();
 
             // Add keybind to toggle collider disabling in World
-            // Keypad asterisk (?)
+            // Keypad asterisk
             SceneHelper.OnWorldSceneLoaded += onWorldSceneLoaded;
 
             UnityEngine.Debug.Log("Initialised!");
