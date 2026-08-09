@@ -1,10 +1,10 @@
 # NoRocketColliders
 
-A mod for the video game Spaceflight Simulator (SFS) that disables colliders between rockets and other rockets.
+A code mod for the video game Spaceflight Simulator (SFS) that disables colliders between rockets and other rockets.
 
 ![gif](./assets/NoRocketColliders.gif)
 
-Keybind to enable/disable colliders: Keypad Asterisk (Keypad 8 + Leftshift)
+Keybind to enable/disable colliders: Keypad Multiply (asterisk, \*)
 
 ## Requirements and Dependencies
 
@@ -19,7 +19,7 @@ Keybind to enable/disable colliders: Keypad Asterisk (Keypad 8 + Leftshift)
 
 ### Forum Post
 
-TBD
+https://sfsforum.com/index.php?threads/norocketcolliders.20111/
 
 ### SFS Modding Guide
 
