@@ -65,8 +65,6 @@ namespace NoRocketColliders
             // Add keybind to toggle collider disabling in World
             // Keypad asterisk
             SceneHelper.OnWorldSceneLoaded += onWorldSceneLoaded;
-
-            UnityEngine.Debug.Log("Initialised!");
         }
 
         private void ApplyColliderSettings()

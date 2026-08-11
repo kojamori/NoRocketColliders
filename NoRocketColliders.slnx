@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="../../Other People's Mods/FSI-Info-Overload-Mod-SFS/InfoOverload/InfoOverload.csproj" />
+  <Project Path="../../Other People's Mods/SFSVanillaUpgrades/VanillaUpgrades.csproj" />
+  <Project Path="../BetterKeybinds/BetterKeybinds.csproj" />
   <Project Path="NoRocketColliders.csproj" />
 </Solution>
