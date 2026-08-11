@@ -1,23 +1,45 @@
 ﻿using BetterKeybinds;
 using ModLoader;
+using ModLoader.Helpers;
 using UnityEngine;
 
 namespace NoRocketColliders;
 
-public class Keybindings : ModKeybindings
+public class NrcKeybindings : ModKeybindings
 {
-    public CustomKey MyAction = KeyCode.KeypadMultiply;
+    #region  Singleton
+
+    private static NrcKeybindings instance;
+
+    #endregion
+
+    #region Keybinds
+
+    public CustomKey toggleRocketColliders = KeyCode.KeypadMultiply;
+
+    #endregion
+
+    #region Setup
 
     public override void CreateUI()
     {
-        CreateUI_Text(BetterKeybinds.Main.Instance.DisplayName); 
-        CreateUI_Keybinding( MyAction, KeyCode.F5, "Toggle Rocket Colliders" );
+        CreateUI_Text(Main.Instance.DisplayName); 
+        CreateUI_Keybinding( toggleRocketColliders, KeyCode.KeypadMultiply, "Toggle Rocket Colliders" );
+        CreateUI_Space();
     }
     
-    private static Keybindings keybindings;
-
     public static void LoadKeybindings()
     {
-        keybindings = SetupKeybindings<Keybindings>(Main.Instance); 
+        instance = SetupKeybindings<NrcKeybindings>(Main.Instance);
+
+        SceneHelper.OnWorldSceneLoaded += OnWorldSceneLoad;
     }
+
+    private static void OnWorldSceneLoad()
+    {
+        AddOnKeyDown_World(instance.toggleRocketColliders, ColliderToggle.OnKeyDown);
+    }
+
+    #endregion
+    
 }
