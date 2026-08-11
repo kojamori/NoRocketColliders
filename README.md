@@ -10,7 +10,8 @@ A code mod for the video game Spaceflight Simulator (SFS) that disables collider
 Keybind to enable/disable colliders: Keypad Multiply (asterisk, \*)
 
 This default keybind can be changed in the settings menu, either in the World or Build scene.
-
+![img.png](img.png)
+In this image, I've set the keybind to "Left Ctrl + Left Shift + A". 
 
 ## Requirements and Dependencies
 
