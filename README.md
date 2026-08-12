@@ -18,7 +18,7 @@ In this image, I've set the keybind to "Left Ctrl + Left Shift + A".
 - SFS (PC Version)
   - v1.6.00.16 and newer
 - [BetterKeybinds](https://github.com/kojamori/BetterKeybinds)
-  - v1.1.0 and newer
+  - v2.0.0 and newer
 
 ## Installation
 

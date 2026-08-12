@@ -24,7 +24,7 @@ public class NrcKeybindings : ModKeybindings
     public override void CreateUI()
     {
         CreateUI_Text(Main.Instance.DisplayName); 
-        CreateUI_Keybinding( toggleRocketColliders, KeyCode.KeypadMultiply, "Toggle Rocket Colliders" );
+        CreateUI_Keybinding( toggleRocketColliders, CustomKey.Clone(toggleRocketColliders), "Toggle Rocket Colliders" );
         CreateUI_Space();
     }
     
